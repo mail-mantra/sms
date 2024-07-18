@@ -145,10 +145,11 @@ array(3) {
 
 
 ## Changelog
-#### Version 1.0.0 provided by [milan-sahana](https://github.com/milan-sahana) - *Testing*
+#### Version 1.0.1 provided by [milan-sahana](https://github.com/milan-sahana) - *Testing*
 - Cleaned Up Code
-- Fixed Spelling
-- Added Option to prevent Duplicate Notifications
+- Fixed Bugs
+- A minimum of PHP 7.3
+- Added Option to prevent json error
 
 ##### Version 1.0.0 - *Stable Release*
 - View Balance
