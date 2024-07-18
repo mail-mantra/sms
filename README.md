@@ -149,7 +149,6 @@ array(3) {
 - Cleaned Up Code
 - Fixed Spelling
 - Added Option to prevent Duplicate Notifications
-- TypeScript Definitions File
 
 ##### Version 1.0.0 - *Stable Release*
 - View Balance
