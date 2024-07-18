@@ -99,20 +99,28 @@ class Sms
                 // {"message":"Authentication failure","type":"error"}
                 $output_arr = json_decode($output, true);
 
-
-                if($output_arr['status'] == 'success' || $output_arr['status'] == '1') {
-                    $result['status'] = 1;
-                    $result['message'] = $output_arr['message'];
-                    $result['code'] = $output_arr['code'];
-                    //$result['output_arr']=$output_arr;
+                if(json_last_error_msg()) {
+                    $result = [
+                        'status' => 0,
+                        'message' => $output,
+                        'code' => json_last_error_msg()
+                    ];
                 }
                 else {
-                    $result['status'] = 0;
-                    $result['message'] = $output_arr['message'];
-                    $result['code'] = 'S002';
-                    //$result['output_arr']=$output_arr;
-                }
 
+                    if($output_arr['status'] == 'success' || $output_arr['status'] == '1') {
+                        $result['status'] = 1;
+                        $result['message'] = $output_arr['message'];
+                        $result['code'] = $output_arr['code'];
+                        //$result['output_arr']=$output_arr;
+                    }
+                    else {
+                        $result['status'] = 0;
+                        $result['message'] = $output_arr['message'];
+                        $result['code'] = 'S002';
+                        //$result['output_arr']=$output_arr;
+                    }
+                }
             }
 
         }
@@ -215,8 +223,16 @@ class Sms
                 }
                 */
                 $output_arr = json_decode($output, true);
-                $result = $output_arr;
-
+                if(json_last_error_msg()) {
+                    $result = [
+                        'status' => 0,
+                        'message' => $output,
+                        'code' => json_last_error_msg()
+                    ];
+                }
+                else {
+                    $result = $output_arr;
+                }
             }
         }
         catch(\Exception $exception) {
@@ -271,7 +287,18 @@ class Sms
             }
             else {
                 curl_close($ch);
-                $result = json_decode($output, true);
+                $output_arr = json_decode($output, true);
+
+                if(json_last_error_msg()) {
+                    $result = [
+                        'status' => 0,
+                        'message' => $output,
+                        'code' => json_last_error_msg()
+                    ];
+                }
+                else {
+                    $result = $output_arr;
+                }
             }
         }
         catch(\Exception $exception) {

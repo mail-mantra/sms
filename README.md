@@ -8,7 +8,7 @@ Official PHP library for [Mail Mantra SMS](https://sms1.mailmantra.com/v2).
 Read up here for getting started and understanding the sms flow with MM Sms: <https://sms1.mailmantra.com/v2>
 
 ### Prerequisites
-- A minimum of PHP 7.2 upto 8.3
+- A minimum of PHP 7.3 upto 8.3
 
 
 ## Installation

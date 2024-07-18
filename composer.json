@@ -1,6 +1,7 @@
 {
     "name": "milan-sahana/mm-sms",
     "description": "Send SMS",
+    "homepage": "https://github.com/milan-sahana/mm-sms",
     "type": "library",
     "license": "MIT",
     "autoload": {
@@ -11,10 +12,12 @@
     "authors": [
         {
             "name": "Milan Sahana",
-            "email": "milansahana@gmail.com"
+            "email": "milansahana@gmail.com",
+            "homepage": "https://blog.milansahana.com"
         }
     ],
     "require": {
+        "php": ">=7.3",
       "ext-curl": "*",
       "ext-json": "*"
     }
