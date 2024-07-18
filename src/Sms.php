@@ -48,13 +48,15 @@ class Sms
             'response' => 'json'
         );
 
-        if($extras['flash'] == 1) {
+        if(isset($extras['flash']) && (string)$extras['flash'] === '1') {
             $postData['flash'] = 1;
         }
-        if($extras['unicode'] == 1) {
+
+        if(isset($extras['unicode']) && (string)$extras['unicode'] === '1') {
             $postData['unicode'] = 1;
         }
-        if($extras['schtime']) {
+
+        if(isset($extras['schtime']) && $extras['schtime']) {
             $postData['schtime'] = $extras['schtime'];
         }
 
