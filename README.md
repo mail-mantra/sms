@@ -1,5 +1,5 @@
 # MM SMS
-[![Stable](https://img.shields.io/badge/stable-v1.0.0-blue.svg)](https://packagist.org/packages/milan-sahana/mm-sms#1.0.0) [![License](https://poser.pugx.org/razorpay/razorpay/license.svg)](https://packagist.org/packages/milan-sahana/mm-sms)
+[![Stable](https://img.shields.io/badge/stable-v1.0.1-blue.svg)](https://packagist.org/packages/milan-sahana/mm-sms#1.0.1) [![License](https://poser.pugx.org/razorpay/razorpay/license.svg)](https://packagist.org/packages/milan-sahana/mm-sms)
 
 A simple library to send SMS using MM Sms Service
 
