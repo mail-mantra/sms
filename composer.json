@@ -14,5 +14,8 @@
             "email": "milansahana@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+      "ext-curl": "*",
+      "ext-json": "*"
+    }
 }
