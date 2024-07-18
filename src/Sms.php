@@ -100,13 +100,10 @@ class Sms
 
 
             if($output_arr['status'] == 'success' || $output_arr['status'] == '1') {
-
-
                 $result['status'] = 1;
-                $result['message'] = 'SMS send Successfully..';
-                $result['code'] = $output_arr['message'];
+                $result['message'] = $output_arr['message'];
+                $result['code'] = $output_arr['code'];
                 //$result['output_arr']=$output_arr;
-
             }
             else {
                 $result['status'] = 0;
