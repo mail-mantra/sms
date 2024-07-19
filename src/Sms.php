@@ -1,6 +1,6 @@
 <?php
 
-namespace MilanSahana\MmSms;
+namespace MM\Sms;
 
 class Sms
 {
