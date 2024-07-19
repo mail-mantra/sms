@@ -1,18 +1,18 @@
 {
-    "name": "milan-sahana/mm-sms",
+    "name": "mail-mantra/sms",
     "description": "Send SMS",
-    "homepage": "https://github.com/milan-sahana/mm-sms",
+    "homepage": "https://github.com/mail-mantra/sms",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "MilanSahana\\MmSms\\": "src/"
+            "MM\\Sms\\": "src/"
         }
     },
     "authors": [
         {
             "name": "Milan Sahana",
-            "email": "milansahana@gmail.com",
+            "email": "milan@mailmantra.in",
             "homepage": "https://blog.milansahana.com"
         }
     ],
