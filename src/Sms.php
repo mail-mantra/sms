@@ -1,6 +1,6 @@
 <?php
 
-namespace MM\Sms;
+namespace MailMantra;
 
 class Sms
 {
@@ -18,7 +18,7 @@ class Sms
     /**
      * @return string|string
      */
-    public function getAuthKey()
+    public function getAuthKey(): string
     {
         return $this->authKey;
     }
@@ -26,13 +26,13 @@ class Sms
     /**
      * @param string|string $authKey
      */
-    public function setAuthKey($authKey)
+    public function setAuthKey(string $authKey)
     {
         $this->authKey = $authKey;
     }
 
 
-    public function send($to, $message, $dlt_te_id, $extras = [])
+    public function send($to, $message, $dlt_te_id, $extras = []): array
     {
         $result = [];
         try {
