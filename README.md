@@ -1,5 +1,5 @@
 # MM SMS
-[![Stable](https://img.shields.io/badge/stable-v1.0.1-blue.svg)](https://packagist.org/packages/milan-sahana/mm-sms#1.0.1) [![License](https://poser.pugx.org/razorpay/razorpay/license.svg)](https://packagist.org/packages/milan-sahana/mm-sms)
+[![Stable](https://img.shields.io/badge/stable-v1.0.2-blue.svg)](https://packagist.org/packages/milan-sahana/mm-sms#1.0.2) [![License](https://img.shields.io/badge/license-MIT-20B2AA)](LICENSE)
 
 A simple library to send SMS using MM Sms Service
 
@@ -16,15 +16,15 @@ Read up here for getting started and understanding the sms flow with MM Sms: <ht
 -   If your project using composer, run the below command
 
 ```
-composer require milan-sahana/mm-sms:1.*
+composer require mail-mantra/sms
 ```
 
-- If you are not using composer, download the latest release from [the releases section](https://github.com/milan-sahana/mm-sms/releases).
+- If you are not using composer, download the latest release from [the releases section](https://github.com/mail-mantra/sms/releases).
   
 ##Note:
 This PHP library follows the following practices:
 
-- Namespaced under `MilanSahana\MmSms`
+- Namespaced under `MM\Sms`
 - API throws exceptions instead of returning errors
 - Options are passed as an array instead of multiple arguments wherever possible
 - All requests and responses are communicated over JSON
@@ -38,7 +38,7 @@ Documentation of MM SMS's API and their usage is available at <https://sms1.mail
 Instantiate the MM Sms instance with `auth_key`. You can obtain the keys from the dashboard app ([https://sms1.mailmantra.com/v2/sender_id/list_all]([https://dashboard.razorpay.com/#/app/keys](https://sms1.mailmantra.com/v2/sender_id/list_all)))
 
 ```php
-use MilanSahana\MmSms\Sms;
+use MailMantra\Sms\Sms;
 
 $mmSMS = new Sms($auth_key);
 ```
