@@ -167,5 +167,5 @@ z = Fixes/patches to existing features of the plugin
 
 ## License
 
-The Razorpay PHP SDK is released under the MIT License. See [LICENSE](LICENSE) file for more details.
+The MM SMS PHP SDK is released under the MIT License. See [LICENSE](LICENSE) file for more details.
 
